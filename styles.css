@@ -1,0 +1,16 @@
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to left, rgb(233, 213, 255), rgb(199, 210, 254));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+
+}
