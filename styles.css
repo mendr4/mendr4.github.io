@@ -1,16 +1,36 @@
+:root {
+  --text-color: #f3f3f3;
+  --pastel-purple: rgb(233, 213, 255);
+  --pastel-blue: rgb(199, 210, 254);
+}
 
 html,
 body {
-  height: 100vh;
-  width: 100%;
   overflow: hidden;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to left, rgb(233, 213, 255), rgb(199, 210, 254));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  background-image: linear-gradient(to left, var(--pastel-purple), var(--pastel-blue));
+  color: var(--text-color);
   font-size: 1.5rem;
+}
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* drops text Muu */
+.drop {
+  animation: dropIn 1s ease forwards;
+}
+@keyframes dropIn {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
